@@ -1,0 +1,13 @@
+server:
+  port: 6606
+
+spring:
+  application:
+    name: passenger-service
+
+message: Passenger Service Configuration Loaded
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6667/eureka/
