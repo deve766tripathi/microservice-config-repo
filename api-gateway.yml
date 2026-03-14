@@ -1,0 +1,24 @@
+server:
+  port: 6668
+
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      routes:
+        - id: passenger-service
+          uri: lb://PASSENGER-SERVICE
+          predicates:
+            - Path=/passenger/**
+
+        - id: carrentals-service
+          uri: lb://CARRENTALS-SERVICE
+          predicates:
+            - Path=/rental/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6667/eureka/
