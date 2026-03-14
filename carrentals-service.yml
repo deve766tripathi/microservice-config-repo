@@ -1,0 +1,13 @@
+server:
+  port: 6616
+
+spring:
+  application:
+    name: carrentals-service
+
+message: Car Rental Service Configuration Loaded
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6667/eureka/
