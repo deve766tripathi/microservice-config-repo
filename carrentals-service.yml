@@ -10,4 +10,4 @@ message: Car Rental Service Configuration Loaded
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:6667/eureka/
+      defaultZone: http://localhost:8761/eureka/
